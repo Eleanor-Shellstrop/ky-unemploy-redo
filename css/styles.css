@@ -1,0 +1,173 @@
+/* ===========================================
+----------------GENERAL STYLES---------------- 
+=============================================*/
+
+h1,
+h2,
+h3 {
+    font-family: 'Roboto', sans-serif;
+}
+    
+p {
+    font-family: 'Lato', sans-serif;  
+}
+
+/* ===========================================
+-------------------HEADER--------------------- 
+=============================================*/
+
+header {
+    background-color: #262262;
+    border: 3px solid rgb(3, 3, 56);
+    color: white;
+    box-shadow: 5px 5px 5px slategrey;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.seal {
+    max-width: 100px;
+    max-height: 100px;
+    justify-content: flex-end;
+}
+
+header h1,
+header p {
+    flex-wrap: wrap;
+}
+
+/* ===========================================
+------------------NAVIGATION------------------ 
+=============================================*/
+
+nav {
+    background: linear-gradient(rgba(14, 15, 32, 0.856) 0%, rgba(25, 31, 121, 0.795) 50%, rgba(14, 15, 32, 0.856));
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    padding-inline-start: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+}
+
+nav li {
+    border-bottom: 3px solid rgba(5, 56, 36, 0.63);
+    padding: 5px 0px;
+    list-style-type: none;
+    transition: all 0.3s ease-in;
+    font-family: 'Lato', sans-serif;  
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+nav a:link {
+    text-decoration: none;
+    color: whitesmoke
+}
+
+nav li:hover {
+	background: rgb(89, 90, 133);
+	border-left: 5px solid #000;
+}
+
+nav a:visited {
+    color: #fff;
+}
+
+/* ===========================================
+----------------------BODY-------------------- 
+=============================================*/
+
+body {
+    background-color: rgb(152, 154, 156);
+}
+
+section {
+    position: relative;
+    background-color: rgba(230, 232, 245, 0.75);
+    margin-top: 20px;
+    padding: 15px;
+}
+
+body h2 {
+    border-bottom: 2px solid darkgoldenrod;
+    padding-bottom: 5px;
+}
+
+body h3 {
+    color: rgb(8, 8, 61);
+}
+
+/* IMAGES */
+.work img {
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    width: 100%;
+}
+
+#worklarge {
+    display: none;
+}
+
+/* CONTACT US */
+form {
+    font-family: 'Lato', sans-serif;
+}
+
+.username,
+.useremail,
+.userphone {
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+  }
+
+/* ===========================================
+-------MEDIA QUERIES FOR LARGE SCREENS--------
+=============================================*/
+
+@media (min-width: 700px) {
+    nav {
+        display: flex;
+        margin: auto 0;
+    }
+    nav ul {
+        display: flex; 
+        flex-direction: row;
+        width: 95%;
+    }
+    nav li {
+        padding: 5px 10px;
+        display: flex;
+        justify-content: center;
+        flex: 1;
+        align-items: center;
+        border-bottom: none;
+        border-left: 2px solid grey;
+        text-align: center;
+    }
+} 
+
+@media (min-width: 800px) {
+    .work h1{
+        display: none;
+    }    
+    #worksmall {
+        display: none;
+    }
+    #worklarge {
+        display: flex;
+        width: 100%,
+    }
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Unemployment Portal Homepage</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/styles.css" type="text/css">
+    </head>
+
+    <header>
+        <img src="img/kyseal.png" class="seal" alt="A spoof of the Kentucky State Seal; Together we stand six feet apart">
+        <h1>Kentucky Unemployment Portal</h1> 
+        <p>Apply for benefits, request payments, COVID-19 unemployment information and more</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href=#>Home</a></li>
+            <li><a href=#>Request Payment</a></li>
+            <li><a href=#>Apply for Benefits</a></li>
+            <li><a href=#>Account Summary</a></li>
+            <li><a href=#>Current COVID-19 Info</a></li>
+            <li><a href=#>Jobs and Other Resources</a></li>
+        </ul>    
+    </nav>
+
+    <body>
+        <main>
+            <section>
+                <h2>My Account</h2>
+                <h3>Request a Payment</h3>
+                <p>To request benefits and complete your eligibility review.</p>
+                <h3>Payment Method</h3>
+                <p>Update your payment method to direct deposit or check </p>
+                <h3>Account Summary</h3>
+                <p>Current unemployment insurance claim information including balance, benefit amounts, overpayments and your downloadable 1099 Tax document</p>
+                <h3>Update My Account</h3>
+                <p>Edit your address, email, phone and more</p>
+                <h3>Document Folder</h3>
+                <p>Upload and submit documents, review documents you have uploaded, view tax documents.</p>
+            </section>
+
+            <section>
+                <h2>Resources</h2>
+                <h3>FAQs on Unemployment Benefits- COVID-19 updated</h3>
+                <p>Your one-stop resource for the latest relief bills and legislature on COVID-19 for unemployment</p>
+                <h3>Looking for Work?</h3>
+                <p>Links to job searches, direct postings from KY government jobs and private employers</p>
+                <h3>Rights and Responsibilities Pamphlet</h3>
+            </section>
+
+            <section class="work">
+                <h1>Let's get to work, Kentucky</h1>
+                <img src="img/workers_bar.png" id="worksmall">
+                <img src="img/work_clear.png" id="worklarge">
+            </section>
+
+
+            <section>
+                <h2>Contact Us</h2>
+                <form action="index.html" method="POST">
+                    <fieldset>
+                        <legend>Your Info:</legend>
+                            <label>Your Name: </label>
+                            <br>
+                            <input type="text" id="name" name="user_name" class="username">
+                            <br>
+                            <label>Email: </label>
+                            <br>
+                            <input type="email" id="email" name="user_email" class="useremail">
+                            <br>
+                            <label>Phone: </label>
+                            <br>
+                            <input type="text" id="phone" name="user_phone" class="userphone">
+                            <br>
+                            <label>What is your preferred method of contact?</label>
+                            <br>
+                            <input type="radio" id="email_contact" name="contact" value="email">
+                            <label for="email_contact">Email </label>
+                            <input type="radio" id="phone_contact" name="contact" value="phone">
+                            <label for="phone_contact">Phone </label>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend>What Can We Help You With?</legend>
+                        <br>
+                            <label for="reason">Reason for Contact:</label>
+                            <br>
+                            <select name="user_inquiry" id="reason">
+                                <option value="">--Please select from the following--</option>
+                                <option value="help">Help signing up</option>
+                                <option value="money">Receiving benefits</option>
+                                <option value="benefits">Question about benefits</option>
+                                <option value="assistance">Other assistance programs</option>
+                                <option value="tax">Tax question</option>
+                                <option value="general">General question</option>
+                            </select>  
+                            <br>
+                            <label for="comment">Brief description of question or issue:</label>
+                            <br>
+                            <textarea id="comment" name="comment" maxlength="250"></textarea>
+                    </fieldset>
+                    <br>
+                    <button class="submit" type="button">
+                        Submit
+                    </button>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>
