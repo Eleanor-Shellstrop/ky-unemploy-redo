@@ -15,6 +15,14 @@ p {
 /* ===========================================
 -------------------HEADER--------------------- 
 =============================================*/
+.headervideo {
+    display: flex;
+}
+
+video {
+    display: flex;
+    width: 100%;
+}
 
 header {
     background-color: #262262;
@@ -157,9 +165,22 @@ textarea {
         border-left: 2px solid grey;
         text-align: center;
     }
+    .username,
+    .useremail,
+    .userphone,
+    textarea {
+        width: 50%;
+    }
 } 
 
 @media (min-width: 800px) {
+    .headervideo {
+        display: flex;
+        justify-content: center;
+    }
+    video {
+        max-width: 800px;
+    }
     .work h1{
         display: none;
     }    
@@ -168,6 +189,15 @@ textarea {
     }
     #worklarge {
         display: flex;
-        width: 100%,
+        max-width: 600px !important;
+        justify-content: center;
+    }
+    .work {
+        display: flex;
+        justify-content: center;
+        background-image: url("../media/hill.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position-y: center;
     }
 }
