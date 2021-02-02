@@ -1,0 +1,104 @@
+/* -------GENERAL STYLES------- */
+
+h1,
+h2 {
+    font-family: 'Roboto', sans-serif;
+}
+    
+p {
+      font-family: 'Lato', sans-serif;  
+}
+
+
+
+/* -------HEADER------- */
+
+header {
+    background-color: #262262;
+    border: 3px solid rgb(3, 3, 56);
+    color: white;
+    box-shadow: 5px 5px 5px slategrey;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.seal {
+    max-width: 100px;
+    max-height: 100px;
+    justify-content: flex-end;
+}
+
+header h1,
+header p {
+    flex-wrap: wrap;
+}
+
+/* -------MAIN CONTENT AREA------- */
+
+
+body {
+    background-color: rgb(210, 210, 250);
+    background-image: url("../media/horse.png");
+    background-repeat: repeat;
+    background-size: 20%;
+    background-blend-mode: screen;
+    flex: 1;
+}
+
+main {
+    margin: 5% 20%;
+}
+
+
+/* -------FORM------- */
+
+form {
+    font-family: 'Lato', sans-serif;
+}
+
+fieldset {
+    margin-bottom: 50px;
+    padding: 15px;
+}
+
+legend {
+    font-size: 1.25em;
+    color: darkblue;
+}
+
+.calcform {
+    border: 2px solid rgb(3, 3, 56);
+    padding: 50px;
+    position: relative;
+    display: flexbox;
+    align-items: center;
+    background-color: rgba(231, 232, 238, 0.685);
+}
+.introbox {
+    display: flexbox;
+    position: relative;
+}
+
+.history {
+    display: flexbox;
+    position: relative;
+}
+
+#history_90,
+#history_1500,
+#history_150k,
+#cLevel {
+    margin-bottom: 20px;
+}
+
+
+/* -------FOOTER------- */
+
+footer {
+    background-color: rgb(14, 14, 80);
+    color: rgba(245, 245, 245, 0.877);
+    box-shadow: inset 0px 0px 10px rgb(36, 34, 58);
+    margin: auto 0;
+    padding: 15px;
+}

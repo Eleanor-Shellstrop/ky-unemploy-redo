@@ -1,4 +1,4 @@
-// OBJECT: PERSON APPLYING
+// OBJECT: PERSON APPLYING, DEFAULT VALUE
 
 let Insuree = {
     salary: 150000
@@ -65,10 +65,14 @@ const calcOtherHelp = function() {
 
 
 // INSUREE SUMMARY OF BENEFITS
+// inputSalary updates the default salary
+const inputSalary = document.getElementById("salary");
+const userSalary = parseInt(inputSalary);
 
-function getInsureeSalary(inputSalary) {
-    Insuree.salary = inputSalary;
-    if (inputSalary >= 1500 && inputSalary <= 150000) {
+
+function getInsureeSalary(userSalary) {
+    Insuree.salary = userSalary;
+    if (userSalary >= 1500 && userSalary <= 150000) {
     console.log('Your benefit level is ' + bracket());
     console.log('Your estimated benefts are $' + calcBenefits() + ' for a total maximum payout for the next 6 months.');
     console.log('You may be eligible for the follow additional benefits: ' + calcOtherHelp());
@@ -77,8 +81,17 @@ function getInsureeSalary(inputSalary) {
     }
 }
 
+
+const calc = document.getElementById("benefits") = getInsureeSalary();
+const button = document.getElementById("submit");
+
+button.addEventListener('click', () => {
+    calc.style.display = 'getInsureeSalary(usersalary)';
+});
+
 //COMMENT OUT LATER ************************************************************************************
 //TESTING VARIOUS SALARIES: ELIGIBLE
+/*
 console.log(getInsureeSalary(25000));
 console.log(getInsureeSalary(40000));
 console.log(getInsureeSalary(90000));
@@ -87,3 +100,4 @@ console.log(getInsureeSalary(125000));
 //TESTING VARIOUS SALARIES: NOT ELIGIBLE
 console.log(getInsureeSalary(150));
 console.log(getInsureeSalary(250000));
+*/
