@@ -53,7 +53,7 @@ main {
 
 /* -------FORM------- */
 
-form {
+section {
     font-family: 'Lato', sans-serif;
 }
 
@@ -67,9 +67,11 @@ legend {
     color: darkblue;
 }
 
-.calcform {
+.calcform,
+#results {
     border: 2px solid rgb(3, 3, 56);
     padding: 50px;
+    margin-bottom: 20px;
     position: relative;
     display: flexbox;
     align-items: center;

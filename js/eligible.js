@@ -66,22 +66,36 @@ const calcOtherHelp = function() {
 
 // INSUREE SUMMARY OF BENEFITS
 // inputSalary updates the default salary
+
 const inputSalary = document.getElementById("salary");
 const userSalary = parseInt(inputSalary);
 
+//Links to HTML
+
+const tier = document.getElementById("tier");
+const payout = document.getElementById("payout");
+const assistance = document.getElementById("assistance");
+const ineligibile = document.getElementById("ineligible");
+
+
+//CALCULATOR FUNCTION
 
 function getInsureeSalary(userSalary) {
     Insuree.salary = userSalary;
     if (userSalary >= 1500 && userSalary <= 150000) {
-    console.log('Your benefit level is ' + bracket());
-    console.log('Your estimated benefts are $' + calcBenefits() + ' for a total maximum payout for the next 6 months.');
-    console.log('You may be eligible for the follow additional benefits: ' + calcOtherHelp());
+        console.log('Your benefit level is ' + bracket());
+        console.log('Your estimated benefts are $' + calcBenefits() + ' for a total maximum payout for the next 6 months.');
+        console.log('You may be eligible for the follow additional benefits: ' + calcOtherHelp());
+        tier.innerText = "Your benefit level is " + bracket();   
+        payout.innerText = "Your estimated benefts are $" + calcBenefits() + " for a total maximum payout for the next 6 months"
+        assistance.innerText = "You may be eligible for the follow additional benefits: " + calcOtherHelp();    
     } else {
         console.log('Unfortunately, you are not eligible for benefits at this time. Please see FAQ for eligibility.');
+        ineligibile.innerText = "Unfortunately, you are not eligible for benefits at this time. Please see FAQ for eligibility."
     }
 }
 
-
+//Event Listener
 const calc = document.getElementById("benefits") = getInsureeSalary();
 const button = document.getElementById("submit");
 
