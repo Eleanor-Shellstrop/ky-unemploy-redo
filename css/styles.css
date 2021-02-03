@@ -141,6 +141,10 @@ body h3 {
 }
 
 /* CONTACT US */
+.contact {
+    background-color: rgba(221, 235, 255, .75);
+}
+
 form {
     font-family: 'Lato', sans-serif;
 }
@@ -197,6 +201,9 @@ textarea {
     .userphone,
     textarea {
         width: 50%;
+    }
+    .contactForm {
+        margin: 5px 10%;
     }
 } 
 
