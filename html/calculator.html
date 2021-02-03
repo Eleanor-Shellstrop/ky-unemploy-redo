@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Log In to Kentucky Unemployment Portal</title>
+    <title>Unemployment Calculator</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/calc_styles.css" type="text/css">
@@ -24,13 +24,14 @@
             <form class="calcform">
                 <fieldset class="introbox">
                     <legend>Your Tax Dollars</legend>
-                        <p><b>Everyone needs help sometimes.</b> Part of the taxes you paid to the state over the years is placed in KY's Unemployment Insurance account.
+                        <p><b>Everyone needs help sometimes.</b></p> 
+                        <p>Part of the taxes you've paid to the state over the years was placed in KY's Unemployment Insurance account.
                             Don't think of it as getting a handout- think of it as using the insurance you have been paying into with your own taxes.</p>
                         <p>Like a spare tire, you hope to never need to use it. You'll be glad it's there when the road gets bumpy.</p>
                 </fieldset>
                 <fieldset class="history">
                     <legend>Employment History</legend>
-                        <label>Have you been employed without a gap for the 90 days?</label>
+                        <label>Have you been employed without a gap for the last 90 days?</label>
                         <br>
                         <input type="radio" id="history_90" name="history_90" value="yes">
                         <label for="history_90">Yes </label>
@@ -66,7 +67,7 @@
                         <br>
                         <input type="number" id="salary" name="user_salary">
                 </fieldset>
-                <button id="submit" type="button" onclick="getInsureeSalary(document.getElementById('salary').value)">Submit</button>
+                <button id="submit" type="button" onclick="getInsureeSalary(document.getElementById('salary').value)">SUBMIT</button>
             </form>
             <section id="results">
                 <h3>Your estimated benefits are:</h3>

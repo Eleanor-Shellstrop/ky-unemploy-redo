@@ -83,35 +83,25 @@ const ineligibile = document.getElementById("ineligible");
 function getInsureeSalary(userSalary) {
     Insuree.salary = userSalary;
     if (userSalary >= 1500 && userSalary <= 150000) {
-        console.log('Your benefit level is ' + bracket());
-        console.log('Your estimated benefts are $' + calcBenefits() + ' for a total maximum payout for the next 6 months.');
-        console.log('You may be eligible for the follow additional benefits: ' + calcOtherHelp());
         tier.innerText = "Your benefit level is " + bracket();   
         payout.innerText = "Your estimated benefts are $" + calcBenefits() + " for a total maximum payout for the next 6 months"
-        assistance.innerText = "You may be eligible for the follow additional benefits: " + calcOtherHelp();    
+        assistance.innerText = "You may be eligible for the following additional benefits: " + calcOtherHelp();    
     } else {
-        console.log('Unfortunately, you are not eligible for benefits at this time. Please see FAQ for eligibility.');
         ineligibile.innerText = "Unfortunately, you are not eligible for benefits at this time. Please see FAQ for eligibility."
     }
 }
 
-//Event Listener
-const calc = document.getElementById("benefits") = getInsureeSalary();
-const button = document.getElementById("submit");
-
-button.addEventListener('click', () => {
-    calc.style.display = 'getInsureeSalary(usersalary)';
-});
-
-//COMMENT OUT LATER ************************************************************************************
+//COMMENT OUT WHEN NOT TESTING ************************************************************************************
 //TESTING VARIOUS SALARIES: ELIGIBLE
 /*
 console.log(getInsureeSalary(25000));
 console.log(getInsureeSalary(40000));
 console.log(getInsureeSalary(90000));
 console.log(getInsureeSalary(125000));
+*/
 
 //TESTING VARIOUS SALARIES: NOT ELIGIBLE
+/*
 console.log(getInsureeSalary(150));
 console.log(getInsureeSalary(250000));
 */

@@ -47,7 +47,7 @@ body {
 }
 
 main {
-    margin: 5% 20%;
+    margin: 5% 5%;
 }
 
 
@@ -70,13 +70,15 @@ legend {
 .calcform,
 #results {
     border: 2px solid rgb(3, 3, 56);
-    padding: 50px;
-    margin-bottom: 20px;
+    padding: 5px;
+    margin-bottom: 50px;
     position: relative;
     display: flexbox;
     align-items: center;
     background-color: rgba(231, 232, 238, 0.685);
+    line-height: 1.5;
 }
+
 .introbox {
     display: flexbox;
     position: relative;
@@ -94,6 +96,16 @@ legend {
     margin-bottom: 20px;
 }
 
+button {
+    background-color: rgb(207, 150, 5);
+    color: white;
+    width: 100px;
+    height: 40px;
+    border-radius: 5%;
+    border-width: 4px;
+    font-size: 16px;
+}
+
 
 /* -------FOOTER------- */
 
@@ -103,4 +115,16 @@ footer {
     box-shadow: inset 0px 0px 10px rgb(36, 34, 58);
     margin: auto 0;
     padding: 15px;
+}
+
+/* MEDIA: LARGE SCREENS */
+
+@media (min-width: 750px) {
+    main {
+        margin: 5% 15%;
+    }
+    .calcform,
+    #results {
+        padding: 15px;
+    }
 }
