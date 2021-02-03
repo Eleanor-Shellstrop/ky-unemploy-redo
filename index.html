@@ -49,10 +49,19 @@
 
             <section>
                 <h2>Resources</h2>
+                <h3>Estimate Your Benefits</h3>
+                    <p>Use our calculator to get an estimate on benefits and other services available to you.</p>
+                    <button type="button" id="calc" onclick="goToCalc()">Go To Calculator</button>
                 <h3>FAQs on Unemployment Benefits- COVID-19 updated</h3>
-                <p>Your one-stop resource for the latest relief bills and legislature on COVID-19 for unemployment</p>
+                    <p>Your one-stop resource for the latest relief bills and legislature on COVID-19 for unemployment</p>
+                    <form  action="https://kcc.ky.gov/Pages/COVID19-UI-Frequently-Asked-Questions.aspx" target="_blank">
+                    <button id="faq" type="submit" value="faq">Go To FAQs</button>
+                    </form>
                 <h3>Looking for Work?</h3>
-                <p>Links to job searches, direct postings from KY government jobs and private employers</p>
+                    <p>Links to job searches, direct postings from KY government jobs and private employers</p>
+                    <form  action="https://kypersonnelcabinet.csod.com/ats/careersite/search.aspx?site=1&c=kypersonnelcabinet" target="_blank">
+                    <button id="job" type="submit" value="jobs">Search KY Jobs</button>
+                </form>
                 <h3>Rights and Responsibilities Pamphlet</h3>
             </section>
 
@@ -114,6 +123,7 @@
                 </form>
             </section>
         </main>
+        <script src="js/scripts.js"></script>
     </body>
 
     <footer>

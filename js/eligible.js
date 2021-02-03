@@ -76,7 +76,7 @@ const tier = document.getElementById("tier");
 const payout = document.getElementById("payout");
 const assistance = document.getElementById("assistance");
 const ineligibile = document.getElementById("ineligible");
-
+const home = document.getElementById("home");
 
 //CALCULATOR FUNCTION
 
@@ -89,6 +89,12 @@ function getInsureeSalary(userSalary) {
     } else {
         ineligibile.innerText = "Unfortunately, you are not eligible for benefits at this time. Please see FAQ for eligibility."
     }
+}
+
+//BACK TO HOMEPAGE
+
+function goHome() {
+    window.location.href = "../index.html";
 }
 
 //COMMENT OUT WHEN NOT TESTING ************************************************************************************

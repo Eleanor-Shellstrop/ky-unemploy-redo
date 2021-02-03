@@ -96,7 +96,14 @@ legend {
     margin-bottom: 20px;
 }
 
-button {
+#toHome {
+    display: flex;
+    justify-content: center;
+}
+
+/* BUTTONS */
+
+#submit {
     background-color: rgb(207, 150, 5);
     color: white;
     width: 100px;
@@ -106,6 +113,15 @@ button {
     font-size: 16px;
 }
 
+#home {
+    background-color: darkblue;
+    color: white;
+    width: 100px;
+    height: 40px;
+    border-radius: 5%;
+    border-width: 4px;
+    font-size: 12px;
+}
 
 /* -------FOOTER------- */
 

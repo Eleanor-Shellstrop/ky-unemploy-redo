@@ -89,6 +89,7 @@ nav a:visited {
     color: #fff;
 }
 
+
 /* ===========================================
 ----------------------BODY-------------------- 
 =============================================*/
@@ -111,6 +112,20 @@ body h2 {
 
 body h3 {
     color: rgb(8, 8, 61);
+}
+
+/* BUTTONS */
+#calc,
+#faq,
+#job {
+    width: 150px;
+    height: 50px;
+    font-size: 1.1rem;
+    color: whitesmoke;
+    background-color: darkgoldenrod;
+    border-width: 3px;
+    border-radius: 5%;
+    margin-bottom: 20px;
 }
 
 /* IMAGES */
@@ -186,6 +201,9 @@ textarea {
 } 
 
 @media (min-width: 800px) {
+    main {
+        margin: 20px 5%;
+    }
     .headervideo {
         display: flex;
         justify-content: center;
