@@ -4,7 +4,8 @@
 
 h1,
 h2,
-h3 {
+h3, 
+h4 {
     font-family: 'Roboto', sans-serif;
 }
     
@@ -99,6 +100,7 @@ body {
 }
 
 section {
+    display: block;
     position: relative;
     background-color: rgba(230, 232, 245, 0.75);
     margin-top: 20px;
@@ -112,6 +114,24 @@ body h2 {
 
 body h3 {
     color: rgb(8, 8, 61);
+}
+.sidebar {
+    display: none;
+    background-image: linear-gradient(rgba(230, 232, 245, .75) 0%,  rgb(152, 154, 156) 100%);
+}
+
+.sidebar h4 {
+    color: rgb(77, 8, 77);
+    border-top: 2px solid navy;
+    padding: 5px;
+}
+
+.sidebar img {
+    max-width: 100px;
+    border-radius: 50%;
+    border: 2px solid darkgoldenrod;
+    box-shadow: 5px 5px 5px rgb(77, 8, 77);
+    border-bottom: 20px;
 }
 
 /* BUTTONS */
@@ -172,6 +192,10 @@ textarea {
     padding: 15px;
 }
 
+footer h3 {
+    color: rgba(245, 245, 245, 0.877);
+}
+
 /* ===========================================
 -------MEDIA QUERIES FOR LARGE SCREENS--------
 =============================================*/
@@ -219,22 +243,66 @@ textarea {
         max-width: 800px;
     }
     .work h1{
-        display: none;
+        display: inline-flex;
+        position: absolute;
+        top: 75px;
+        font-family: 'Homemade Apple', cursive;
+        font-size: 36px;
+        color: white;
+        text-shadow: 3px 3px 3px rgba(5, 56, 36, 0.63);
     }    
     #worksmall {
         display: none;
     }
     #worklarge {
         display: flex;
-        max-width: 600px !important;
+        max-width: 800px !important;
         justify-content: center;
     }
     .work {
         display: flex;
         justify-content: center;
-        background-image: url("../media/hill.jpg");
         background-repeat: no-repeat;
         background-size: 100%;
         background-position-y: center;
+    }
+}
+
+@media (min-width: 1200px) {
+    #grid-container .video {
+        grid-area: vd;
+        display: flex;
+        justify-content: center;
+    }
+    #grid-container .sidebar {
+        grid-area: sb;
+    }
+    #grid-container .account {
+        grid-area: ac;
+    }
+    #grid-container .resources {
+        grid-area: rc;
+    }
+    #grid-container .work {
+        grid-area: wk;
+    }
+    #grid-container .contact {
+        grid-area: ct;
+    }
+    #grid-container {
+        display: grid;
+        grid-template-rows: minmax(100px, auto);
+        grid-template-columns: 1fr 50px repeat(4, 1fr); 
+        gap: 5px 5px;
+        grid-template-areas:
+            "vd vd vd vd vd vd"
+            "sb . ac ac ac ac"
+            "sb . rc rc rc rc"
+            "sb . wk wk wk wk"
+            ". . ct ct ct ct";
+        
+    }
+    .sidebar {
+        display: block;
     }
 }
