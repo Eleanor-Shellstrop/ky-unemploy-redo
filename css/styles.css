@@ -30,7 +30,7 @@ header {
     border: 3px solid rgb(3, 3, 56);
     color: white;
     box-shadow: 5px 5px 5px slategrey;
-    padding-left: 15px;
+    padding: 0px 15px;
     display: flex;
     flex-direction: column;
 }
@@ -108,13 +108,23 @@ section {
 }
 
 body h2 {
-    border-bottom: 2px solid darkgoldenrod;
-    padding-bottom: 5px;
+    border-bottom: 4px double darkgoldenrod;
+    border-top: 4px double darkgoldenrod;
+    padding: 20px 0px;
 }
 
 body h3 {
     color: rgb(8, 8, 61);
+    padding-top: 15px;
+    border-top: 2px ridge whitesmoke
 }
+
+.account p {
+    margin-bottom: 50px;
+}
+
+/*Sidebar*/
+
 .sidebar {
     display: none;
     background-image: linear-gradient(rgba(230, 232, 245, .75) 0%,  rgb(152, 154, 156) 100%);
@@ -126,12 +136,17 @@ body h3 {
     padding: 5px;
 }
 
-.sidebar img {
+.sidebar img,
+.account img {
     max-width: 100px;
     border-radius: 50%;
     border: 2px solid darkgoldenrod;
     box-shadow: 5px 5px 5px rgb(77, 8, 77);
     border-bottom: 20px;
+}
+
+.account img {
+    max-width: 50px;
 }
 
 /* BUTTONS */
@@ -240,7 +255,7 @@ footer h3 {
         justify-content: center;
     }
     video {
-        max-width: 800px;
+        max-width: 700px;
     }
     .work h1{
         display: inline-flex;
