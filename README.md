@@ -1,6 +1,8 @@
 # Redesign of the Kentucky Unemployment Portal
 This is a reimaged page for the Kentucky Unemployment Portal for my capstone project in Code Louisville: Front-End Web Development class, Spring 2021.
 
+* Demo page here: https://eleanor-shellstrop.github.io/ky-unemploy-redo/
+
 ## Summary
 Like so many across the country, I was furloughed during the COVID-19 pandemic. Navigating the Kentucky Unemployment Portal page has been a source of frustration for me. In this project, I created a page that has the feel of a government website while keeping mobile-first design and user ease a priority. 
 
@@ -50,3 +52,7 @@ let tierLevel = {
   * The "Submit" button on the log in page takes the user to the homepage.
   * The calculator page opens from the "Go To Calculator" button.
   * The "Back To Home" button on the calculator page takes the user back to the homepage.
+
+# Media Credits:
+* Kentucky COVID-19 seal credits: Concepts by Jason and Brooke Ison and @tizbitz, design by @SinclairArt for https://www.KyforKy.com
+* All other images and video designed by Anne Ensign using https://www.Canva.com
