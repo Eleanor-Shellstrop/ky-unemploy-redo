@@ -24,7 +24,7 @@ let tierLevel = {
         eligiblePercentage: 1.00,
         minSalary: 1500,
         maxSalary: 29999,
-        otherHelp: ['Food and grocery assistance', 'Tuition grants', 'Childcare assistance']
+        otherHelp: ['Food and grocery assistance', 'Tuition and grants', 'Childcare assistance']
     },
     tierTwo: {
         eligiblePercentage: 0.80,
