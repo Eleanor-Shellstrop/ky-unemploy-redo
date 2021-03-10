@@ -17,7 +17,9 @@ CSS Features:
 * Video at the top of the page that autoplays, has controls, and is muted upon opening the website.
 
 JS Features:
-* Scroll to "Estimate Your Benefits" and click "Go To Calculator." Entering a salary will calculate estimated benefits and additional resources available by income bracket using nested objects: 
+* Scroll to "Estimate Your Benefits" and click "Go To Calculator." 
+  ![Screenshot](./media/calculator.jpg)
+* Entering a salary will calculate estimated benefits and additional resources available by income bracket using nested objects: 
 ```javascript
 let tierLevel = {
     tierOne: {
